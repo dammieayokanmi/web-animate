@@ -1,0 +1,26 @@
+@font-face {
+	font-family: Matteo;
+	src: url(../images/Matteo.otf);
+  }
+  
+  * {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Matteo';
+  }
+  .absolute{
+	position: absolute;
+  }
+  .grid{
+	display: grid;
+  }
+  .flex{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+  }
+  img{
+	max-width: 100%;
+	height: auto;
+  }

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CodePen - Locomotive Scroll Tutorial</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css'>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <main data-scroll-container class="container">
+      <nav class="flex">
+        <a class="logo" href="index.html">
+          <img src="./images/logo.png" alt="logo" />
+        </a>
+        <div class="ham">
+          <img class="peb" src="./images/ham.png" alt="menu" />
+          <img class="menu" src="./images/menu.jpg" alt="menu" />
+        </div>
+      </nav>
+      <section class="hero">
+        <div class="hero-video">
+          <div class="gradient">hell</div>
+          <video autoplay loop muted id="myVideo">
+          <!-- <video > -->
+            <source src="http://thenewcode.com/assets/videos/polina.webm" type="video/webm">
+              <source src="http://thenewcode.com/assets/videos/polina.mp4" type="video/mp4">
+          </video>
+        </div>
+        <button id="myBtn" onclick="myFunction()">Pause</button>
+      </section>
+      <section class="main">
+        <img class="absolute big-pebble" src="./images/bigPebble.png" alt="" />
+        <img
+          class="absolute small-pebble"
+          src="./images/smallPebble.png"
+          alt=""
+        />
+        <div class="what flex " data-scroll data-scroll-speed="2">
+          <img src="" alt="" class="absolute" />
+          <h1 class="title"  data-scroll 
+          data-scroll-direction="horizontal" 
+          data-scroll-speed="-2"><span>What is</span> Markus</h1>
+          <p class="info" data-scroll 
+          data-scroll-direction="horizontal" 
+          data-scroll-speed="2">
+            Markus is an AI-powered, voice-enabled digital assistant for
+            doctors. We want to give our users superpowers to make them happier
+            and more productive while solving some of the biggest problems in
+            healthcare
+          </p>
+          <button class="get">Get Markus</button>
+          <!-- <img src="./images/curve.png" alt=""> -->
+        </div>
+        <div class="focus grid">
+          <div class="lhs">
+            <div class="line"></div>
+            <h3 class="title">Let Doctors focus on</h3>
+            <h3 class="spanned">what matters</h3>
+            <p>
+              We've built Markus and our team with the promise of service,
+              passion, and reliability at the forefront. Markus invisibly
+              assists in the exam room, the operating room, or the office to
+              lift the administrative burden from doctors.
+            </p>
+          </div>
+          <div class="rhs">
+            <img src="./images/strugling_doctors.png" alt="" />
+            <p>
+              "Voice enabled assistance helps you focus on patients not paper"
+            </p>
+          </div>
+        </div>
+
+        <div class="why">
+          <h2>Why use <span class="spanned">Markus</span></h2>
+          <div class="grid">
+            <div>
+              <img src="./images/speak.png" alt="" />
+              <div class="caption">
+                <h4 class="text">Speak naturally</h4>
+                <p  class="text">to Markus to capture a session</p>
+              </div>
+            </div>
+            <div>
+              <div class="retrieve">
+                <img class="pebble" src="./images/retrieve-pebble.png" alt="" />
+               <div class="absolute">
+                <img src="./images/retrieve.png" alt="">
+              
+                <div class="caption">
+                  <h4 class="text"> Retrieve data</h4>
+                  <p  class="text colored">dictate notes, edit and share</p>
+                </div>
+               </div>
+            </div>
+            </div>
+            <div>
+              <img src="./images/emr.png" alt="" />
+              <div class="caption">
+                <h4 class="text">EMR Integration</h4>
+                                  <p  class="text ">dictate notes, edit and share</p>
+                </div>
+            </div>
+            <div>
+              <img src="./images/data.png" alt="" />
+              <div class="caption">
+                <h4 class="text">Data security</h4>
+              </div>
+            </div>
+             </div>
+        </div>
+
+
+        <div class="team">
+          <h1 class="title">The <span class="spanned">Team</span></h1>
+          <div class="grid">
+            <div class="team-member">
+              <img class="absolute pebble" src="./images/team-pebble.png" alt="">
+
+              <div class="absolute">
+                <img class="absolute" src="./images/white-doc.png" alt="">
+
+                <img class="top" src="./images/white-doc.png" alt="">
+
+                <p class="name">Dr Sososo</p>
+                <p class="role">Profession</p>
+
+
+              </div>
+            </div>
+            <div class="team-member">
+              <img class="absolute pebble" src="./images/team-pebble.png" alt="">
+
+              <div class="absolute">
+                <img class="absolute" src="./images/female-doc.png" alt="">
+
+                <img class="top" src="./images/female-doc.png" alt="">
+
+                <p class="name">Dr Sososo</p>
+                <p class="role">Profession</p>
+
+              </div>
+            </div>
+            
+            <div class="team-member last">
+              <img class="absolute pebble" src="./images/team-pebble.png" alt="">
+
+              <div class="absolute">
+
+                <img class="top" src="./images/black-doc.png" alt="">
+
+                <p class="name">Dr Sososo</p>
+                <p class="role">Profession</p>
+              </div>
+            </div>
+            
+            
+         
+          </div>
+        
+
+          
+        </div>
+
+        <div class="with-hr">
+          <div class="socials flex">
+            <div class="social flex">
+             <a href=""> <img src="./images/fb.png" alt=""></a>
+
+<a href="">                <img src="./images/twitterIcon.png" alt="">
+</a>         
+<a href="">    <img src="./images/instaIcon.png" alt="">
+</a>   
+<a href="">                <img src="./images/youtubeIcon.png" alt="">
+</a>
+<a href=""><img src="./images/linkedIcon.png" alt="">
+</a>
+            </div>
+           
+          </div>
+          <hr class="hr"></hr>
+        </div>
+
+        <div class="grid footer">
+          <div class="lhs">
+            <div class="logo-foot flex">
+              <img src="./images/logo.png" alt="">
+              <p class="text">Let doctors focus on what matters</p>
+
+            </div>
+            <img class="wave" src="./images/wave.png" alt="" class="wave">
+            <p class="text"> The Markus name and logo are trademarks of Markus AI, Inc. All other trademarks are the property of their respective owners. © 2020 Markus AI, Inc. Made in Lagos City, NG. All rights reserved.</p>
+          </div>
+          <div class="rhs">
+<div class="grid foot-flex">
+<div class="flexy">
+  <div class="footer-links">
+    <a href="">How it works</a>
+    <a href="">Specialists</a>
+    <a href="">Increase Revenue</a>
+    <a href="">Press</a>
+    <a href="">Terms of use</a>
+    
+  </div>
+  
+  </div>
+<div class="flexy">
+  <div class="footer-links">
+    <a href="">Our Technology</a>
+    <a href="">Primary Care</a>
+    <a href="">For Partners</a>
+    <a href="">Careers</a>
+    <a href=""> Privacy Policy</a>
+  </div>
+  
+  </div>
+
+  <div class="lower">
+   
+    <p>Get Markus for</p>
+        <div class="links-img flex">
+          
+          <img class="border-right" src="./images/shape.png" alt="">
+    
+      <img class="small-img" src="./images/android.png" alt="">
+        </div>
+    </div>
+    <div class="lower">
+      <p style="visibility: hidden;">Get Markus for</p>
+      <div class="links-img flex">
+        <img class="border-right" src="./images/a.png" alt="">
+  
+    <img class="small-img2" src="./images/ios.png" alt="">
+      </div>
+  </div>
+</div>
+</div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/ScrollTrigger.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
