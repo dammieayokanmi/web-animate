@@ -416,7 +416,7 @@ nav{
 	width: 90%;
 }
 .small-pebble, .big-pebble {
-	opacity: .7;
+	opacity: .7 !important;
 }
 .focus .lhs,.with-hr{
 	padding: 0 20px;
