@@ -4,14 +4,17 @@
     <meta charset="UTF-8" />
     <title>CodePen - Locomotive Scroll Tutorial</title>
     <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css'>
     <link rel="stylesheet" href="./css/main.css" />
-    <link rel="stylesheet" href="./css/style.css" />
+
     <link rel="stylesheet" href="./css/index.css" />
   </head>
   <body>
-    <main data-scroll-container class="container">
+    <!-- <div class="preload">
+      <img src="https://cdn.dribbble.com/users/107759/screenshots/3498589/loader.gif">
+      </div> -->
+    <main class="content">
       <nav class="flex">
         <a class="logo" href="index.html">
           <img src="./images/logo.png" alt="logo" />
@@ -22,31 +25,27 @@
         </div>
       </nav>
       <section class="hero">
-        <div class="hero-video">
-          <div class="gradient">hell</div>
+        <div class="hero-video" data-aos="zoom-out"
+        data-aos-duration="2000">
+          <div class="gradient"></div>
           <video autoplay loop muted id="myVideo">
           <!-- <video > -->
             <source src="http://thenewcode.com/assets/videos/polina.webm" type="video/webm">
               <source src="http://thenewcode.com/assets/videos/polina.mp4" type="video/mp4">
           </video>
         </div>
-        <button id="myBtn" onclick="myFunction()">Pause</button>
+        <button  id="myBtn" onclick="myFunction()">Pause</button>
       </section>
-      <section class="main">
-        <img class="absolute big-pebble" src="./images/bigPebble.png" alt="" />
-        <img
+      <section class="main " >
+        <img data-aos="fade-up-right" data-aos-duration="1000" class="absolute big-pebble" src="./images/bigPebble.png" alt="" />
+        <img data-aos="fade-up-right" data-aos-duration="1000"
           class="absolute small-pebble"
           src="./images/smallPebble.png"
           alt=""
         />
-        <div class="what flex " data-scroll data-scroll-speed="2">
-          <img src="" alt="" class="absolute" />
-          <h1 class="title"  data-scroll 
-          data-scroll-direction="horizontal" 
-          data-scroll-speed="-2"><span>What is</span> Markus</h1>
-          <p class="info" data-scroll 
-          data-scroll-direction="horizontal" 
-          data-scroll-speed="2">
+        <div class="what flex " data-aos="fade-up" data-aos-duration="2000" >
+          <h1 class="title aniview" data-av-animation="slideInRight" ><span>What is</span> Markus</h1>
+          <p class="info" >
             Markus is an AI-powered, voice-enabled digital assistant for
             doctors. We want to give our users superpowers to make them happier
             and more productive while solving some of the biggest problems in
@@ -56,7 +55,9 @@
           <!-- <img src="./images/curve.png" alt=""> -->
         </div>
         <div class="focus grid">
-          <div class="lhs">
+          <div class="lhs" data-aos="fade-right"
+          data-aos-offset="200" 
+          data-aos-easing="ease-in-sine">
             <div class="line"></div>
             <h3 class="title">Let Doctors focus on</h3>
             <h3 class="spanned">what matters</h3>
@@ -67,9 +68,12 @@
               lift the administrative burden from doctors.
             </p>
           </div>
-          <div class="rhs">
-            <img src="./images/strugling_doctors.png" alt="" />
-            <p>
+          <div class="rhs" >
+            <img data-aos="flip-up"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000" src="./images/strugling_doctors.png" alt="" />
+            <p data-aos="fade-up"
+            data-aos-anchor-placement="top-center">
               "Voice enabled assistance helps you focus on patients not paper"
             </p>
           </div>
@@ -78,14 +82,14 @@
         <div class="why">
           <h2>Why use <span class="spanned">Markus</span></h2>
           <div class="grid">
-            <div>
+            <div data-aos="fade-up" data-aos-duration="1000" >
               <img src="./images/speak.png" alt="" />
               <div class="caption">
                 <h4 class="text">Speak naturally</h4>
                 <p  class="text">to Markus to capture a session</p>
               </div>
             </div>
-            <div>
+            <div  data-aos="fade-down" data-aos-duration="1000">
               <div class="retrieve">
                 <img class="pebble" src="./images/retrieve-pebble.png" alt="" />
                <div class="absolute">
@@ -98,14 +102,14 @@
                </div>
             </div>
             </div>
-            <div>
+            <div data-aos="fade-up" data-aos-duration="1000">
               <img src="./images/emr.png" alt="" />
               <div class="caption">
                 <h4 class="text">EMR Integration</h4>
                                   <p  class="text ">dictate notes, edit and share</p>
                 </div>
             </div>
-            <div>
+            <div  data-aos="fade-down" data-aos-duration="1000">
               <img src="./images/data.png" alt="" />
               <div class="caption">
                 <h4 class="text">Data security</h4>
@@ -116,9 +120,9 @@
 
 
         <div class="team">
-          <h1 class="title">The <span class="spanned">Team</span></h1>
+          <h1 class="title" data-aos="fade-up">The <span class="spanned">Team</span></h1>
           <div class="grid">
-            <div class="team-member">
+            <div class="team-member" data-aos="zoom-in-up" data-aos-duration="2000" >
               <img class="absolute pebble" src="./images/team-pebble.png" alt="">
 
               <div class="absolute">
@@ -132,7 +136,7 @@
 
               </div>
             </div>
-            <div class="team-member">
+            <div class="team-member" data-aos="zoom-in-down" data-aos-duration="2000" >
               <img class="absolute pebble" src="./images/team-pebble.png" alt="">
 
               <div class="absolute">
@@ -146,7 +150,7 @@
               </div>
             </div>
             
-            <div class="team-member last">
+            <div class="team-member last" data-aos="zoom-in-up" data-aos-duration="2000" >
               <img class="absolute pebble" src="./images/team-pebble.png" alt="">
 
               <div class="absolute">
@@ -168,8 +172,8 @@
 
         <div class="with-hr">
           <div class="socials flex">
-            <div class="social flex">
-             <a href=""> <img src="./images/fb.png" alt=""></a>
+            <div class="social flex" data-aos="fade-left" data-aos-duration="1000">
+             <a href=""  > <img src="./images/fb.png" alt=""></a>
 
 <a href="">                <img src="./images/twitterIcon.png" alt="">
 </a>         
@@ -186,7 +190,7 @@
         </div>
 
         <div class="grid footer">
-          <div class="lhs">
+          <div class="lhs" data-aos="fade-right" data-aos-duration="2000" >
             <div class="logo-foot flex">
               <img src="./images/logo.png" alt="">
               <p class="text">Let doctors focus on what matters</p>
@@ -195,7 +199,7 @@
             <img class="wave" src="./images/wave.png" alt="" class="wave">
             <p class="text"> The Markus name and logo are trademarks of Markus AI, Inc. All other trademarks are the property of their respective owners. © 2020 Markus AI, Inc. Made in Lagos City, NG. All rights reserved.</p>
           </div>
-          <div class="rhs">
+          <div class="rhs" data-aos="fade-left" data-aos-duration="2000" >
 <div class="grid foot-flex">
 <div class="flexy">
   <div class="footer-links">
@@ -243,10 +247,19 @@
         </div>
       </section>
     </main>
+   
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/ScrollTrigger.min.js"></script>
+  <!-- <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+  $(".preload").fadeOut(2000, function() {
+        $(".content").fadeIn(1000);   
+        });
+    });
+
+  </script> -->
+
     <script src="./js/script.js"></script>
   </body>
 </html>
