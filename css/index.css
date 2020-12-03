@@ -2,7 +2,7 @@
 	font-family: Light;
 	src: url(../images/Metropolis-Light.otf);
   }
-  body{
+  main{
 	overflow-x: hidden;
   }
 nav{
